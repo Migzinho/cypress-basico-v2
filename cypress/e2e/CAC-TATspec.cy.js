@@ -285,7 +285,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     //       '@fileOne',
     //       '@fileTwo'])
     //     .should(function($input) {
-    //       expect($input[0].files[0].name).to.equal('example.json')
+    //       expect($input[0].files[0].name).to.equal('example.json')1
     //       expect($input[0].files[1].name).to.equal('example2.json')
     //     })
     // })
