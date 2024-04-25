@@ -33,7 +33,7 @@ Github:
 	   git --version
    - Se a versão do Git for exibida, a instalação foi bem-sucedida.
 
-Node.js e npm
+## Node.js e npm
 1. Baixe o Node.js:
    - Acesse o site oficial do Node.js em https://nodejs.org/.
    - Na página inicial, clique na versão recomendada para baixar.
