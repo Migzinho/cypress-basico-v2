@@ -6,18 +6,18 @@ runme:
 
 # Testes automatizados com Cypress - Básico
 
-Testes do Curso TAT Básico versão 2
+ - Testes do Curso TAT Básico versão 2
 
 # Pre-requisitos
 
-- git (https://desktop.github.com/)
+- git (https://github.com/)
 - Node.js (https://nodejs.org/en/download)
 - npm (https://www.npmjs.com/package/download)
 - Google Chorme (https://www.google.com/intl/pt-BR/chrome/)
 - Visual Studio Code (https://code.visualstudio.com/download)
 
 # Dependências:
-Github:
+### Github:
 
 1. Baixe o Github:
    - Acesse o site oficial do Git em https://desktop.github.com/.
@@ -33,7 +33,7 @@ Github:
 	   git --version
    - Se a versão do Git for exibida, a instalação foi bem-sucedida.
 
-Node.js e npm
+### Node.js e npm
 1. Baixe o Node.js:
    - Acesse o site oficial do Node.js em https://nodejs.org/.
    - Na página inicial, clique na versão recomendada para baixar.
@@ -46,7 +46,7 @@ Node.js e npm
      npm -v
    - Se as versões do Node.js e do npm forem exibidas, a instalação foi bem-sucedida.
 
-Google Chrome:
+### Google Chrome:
 1. Baixe o Google Chrome:
    - Acesse o site oficial do Google Chrome em https://www.google.com/intl/pt-BR/chrome/.
    - Clique no botão "Download Chrome".
