@@ -7,7 +7,7 @@ describe('Empresa Miketec', function() {
     cy.visit('https://miketec.com.br/')
     cy.title().should('be.equal', 'MikeTec: Tecnologia para o sucesso do seu negócio de turismo')
   })
-  it('verifica o subtitle Backoffice', function(){
+  it('verifica o Backoffice', function(){
     cy.visit('https://miketec.com.br/');
     cy.get('.et_pb_button_1')
       .click()
