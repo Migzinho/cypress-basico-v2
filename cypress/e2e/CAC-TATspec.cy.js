@@ -271,7 +271,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
           expect(input[0].files[1].name).to.equal('example2.json')
         })
     })
-    // Exercício extra 4
+    // Exercício extra 41
     // Cria um teste chamado seleciona dois arquivos da pasta fixtures, só que atraves de alias
     // Tal teste deve verificar se os dois arquivos distintos estão corretos
     // it('seleciona dois arquivos da pasta fixtures, só que atraves de alias', function(){
