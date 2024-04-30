@@ -1,0 +1,50 @@
+/// <reference types="Cypress" />
+
+    describe('Data Aniversário', function (){
+        beforeEach(function() {
+            const now = new Date('2021-06-16').getTime()
+            
+            cy.clock(now)
+            cy.visit('https://age-finder.vercel.app/')
+        })
+        context('Plural', () => {
+            const inputs = [
+                {
+                    birthdate: '2021-06-16',
+                    age: '0'
+                },
+                {
+                    birthdate: '1982-04-15',
+                    age: '39'
+                }
+            ]
+
+            inputs.forEach(input => {
+                it.only(`pluralizes a idade achada - ${input.age}`, () => {
+                    cy.setDate(input.birthdate)
+
+                    cy.contains('p', "You're 0 years old")
+                      .should('be.visible')
+                })
+
+                it('Date in the futere', () => {
+                    cy.setDate('2021-06-17')
+
+                    cy.contains('p', 'Are you from the future?')
+                      .should('be.visible')
+                })
+                it('Date in the futere', () => {
+                    cy.setDate('2020-06-17')
+
+                    cy.contains('p', "You're 0 year old")
+                      .should('be.visible')
+                })
+            })
+        })
+
+        // it('Encontra a Data do aniversário', function(){
+        //     cy.get('[data-cy="birthdate-date-field"]').type('1112-11-12')
+        //     cy.get('p').should('be.visible')
+        //     cy.contains("You're 912 years old.").should('be.visible')
+        // })
+    })

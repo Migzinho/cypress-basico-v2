@@ -15,3 +15,10 @@ Cypress.Commands.add('verificaResultados', function(){
     cy.get('[data-testid="result"]')
       .should('have.length', 10)
 })
+
+Cypress.Commands.add('setDate', date => {
+    cy.get('[data-cy="birthdate-date-field"]')
+      .type(date)
+      .should('have.value', date)
+      .blur()
+})
