@@ -317,7 +317,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     it('preenche a area de texto usando o comando invoke', function(){
       const longtext = Cypress._.repeat('0123456789', 20)
 
-      cy.get('#open-text-area')
+      cy.get('#open-text-area')''
         .invoke('val',longtext)
         .should('have.value', longtext)
     })
